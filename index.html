@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A user-friendly product management application for adding, updating, and managing products efficiently.">
+    <link rel="icon" href="./img/add-to-cart.png" type="image/x-icon">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <div class="container py-5">
+      
+      <h1 class=" text-center">Products</h1>
+        <div class="form-group">
+          <label for="productName"class="h6" >Name:</label>
+          <input class="form-control mb-3 bg-dark" id="productName" placeholder="Enter Product Name..."  type="text">
+        </div>
+        <div class="form-group">
+          <label for="productPrice" class="h6">Price:</label>
+          <input class="form-control mb-3 bg-dark" id="productPrice" placeholder="Enter Product Price..." type="number">
+        </div>
+        <div class="form-group">
+          <label for="productCat" class="h6"> Category:</label>
+          <input class="form-control mb-3 bg-dark" id="productCat" placeholder="Enter Product Category..." type="text">
+        </div>
+        
+         <div class="form-group">
+          <label for="productDes"  class="h6">Descraption</label>
+          <textarea class="form-control mb-3 bg-dark" id="productDes" placeholder="Enter Product Descraption..." ></textarea>
+         </div>
+        <button id="mainupdate" onclick="addproduct()" disabled class="btn btn-gray px-5 text-white ">Add Product</button>
+    
+ </div>
+ <div class="container py-5">
+  <input oninput="searchProducts(this.value)" id="searchProduct" class="form-control w-50 m-auto bg-dark" placeholder="search by name ..." type="search">
+  <table class="table table-active   my-3 ">
+    <thead class="border-bottom border-dark">
+          <th >Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Descraption</th>
+          <th>updata</th>
+          <th>Delete</th>
+      </thead>
+      <tbody id="tbody" class=" border-bottom border-dark py-5">
+        
+      
+      </tbody>
+  </table>
+
+</div>
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

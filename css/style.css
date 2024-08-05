@@ -1,0 +1,22 @@
+body{
+    background-image: url("../img/rachit-tank-2cFZ_FB08UM-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-dark{
+    background-color: rgba(3, 0, 0, 0.3)!important;
+}
+.btn-gray{
+    background-color: rgba(11, 11, 11, 0.8);
+}
+.btn-gray:hover{
+    background-color: rgba(11, 11, 11, 0.8);
+}
+::placeholder{
+    color: rgb(241, 240, 240) !important;
+}
+:disabled{
+    color: black !important;
+}
